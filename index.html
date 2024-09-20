@@ -5,10 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tic Tac Toe</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&display=swap" rel="stylesheet">
     </head>
     <body>
-     <script src="./js.js">
-
-     </script>
+      <div class="header"><h2>Tic Tac Toe</h2></div>
+      <div class="body">
+        <dialog class="question">
+        <form class="form">
+          <p>
+          <label for="playerOne">Name player one:</label>
+          <input type="text" id="playerOne" name="playerOne">
+        </p>
+        <p>
+          <label for="playerTwo">Name player two:</label>
+          <input type="text" id="playerTwo" name="playerTwo">
+        </p>
+        <p class = "p">
+          <button class="restart">Start</button> 
+      </p>
+        </form>
+      </dialog>
+      <dialog class="result">
+        <h2 class="finish">Player "Nikita" Win!</h2>
+        <div>
+        <button class="restart2">Restart?</button>
+      </div>
+      </dialog>
+      <div class="container">
+        <button class="cell">1</button>
+        <button class="cell">2</button>
+        <button class="cell">3</button>
+        <button class="cell">4</button>
+        <button class="cell">5</button>
+        <button class="cell">6</button>
+        <button class="cell">7</button>
+        <button class="cell">8</button>
+        <button class="cell">9</button>
+      </div>
+      <h2 class="output">Click Start</h2>
+    </div>
+    <div class="footer"></div>
+     <script src="./js.js"></script>
     </body>
 </html>
