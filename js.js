@@ -104,7 +104,7 @@ function checkRound() {
         
         rest.disabled = false
         //alert(`${getActivePlayer().name} Win!!!`)
-        finish.textContent = `Player ${getActivePlayer().name} Win!!!`
+        finish.textContent = `Player "${getActivePlayer().name}" Win!!!`
         result.showModal()
         activePlayer = player[1]
         board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -119,7 +119,8 @@ function checkRound() {
          cell.disabled = true;
         })
         rest.disabled = false
-        alert("Draw! game.restart()")
+        finish.textContent = `Draw!!!`
+        result.showModal()
        // rest2.showModal()
         
     }

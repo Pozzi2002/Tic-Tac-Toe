@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 0.8fr;
 }
 .header {
     background-color: #FF6F3C;
@@ -83,7 +83,18 @@ input:focus {
 }
 .footer {
     background-color: #FFC93C;
+    display: flex;
+    align-items: center;
 }
+.footer h2{
+    font-family: "Protest Guerrilla";
+    color: #155263;
+    font-size: 1.8rem;
+    margin: 0px;
+    margin-left: 12px;
+    padding: 0px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 120px 120px 120px;
@@ -145,4 +156,11 @@ button.cell:hover{
     background-color: white;
     opacity: 0.9;
     border: 1px solid black
+}
+.output {
+    display: flex;
+    justify-content: center;
+    font-family: "Protest Guerrilla";
+    letter-spacing: 2px;
+    font-size: 35px;
 }
